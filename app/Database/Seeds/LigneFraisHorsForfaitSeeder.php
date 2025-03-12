@@ -30,7 +30,7 @@ class LigneFraisHorsForfaitSeeder extends Seeder
 		foreach($lesFichesFrais as $uneFicheFrais)
 		{
 			// Obtention de la PK de la fiche
-			$idVisiteur = $uneFicheFrais['idVisiteur'];
+			$idUtilisateur = $uneFicheFrais['idUtilisateur'];
 			$mois =  $uneFicheFrais['mois'];
 			
 			// Calcul aléatoire d'un nombre de frais à créer
@@ -57,7 +57,7 @@ class LigneFraisHorsForfaitSeeder extends Seeder
 
 				// Assemblage du frais à mémoriser
 				$data = [
-					'idvisiteur' 	=> $idVisiteur,
+					'idutilisateur' 	=> $idUtilisateur,
 					'mois'				=> $mois,
 					'libelle' 		=> $lib,
 					'date'				=> $dateFrais,

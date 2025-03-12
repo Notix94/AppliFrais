@@ -8,10 +8,10 @@ class VisiteurSeeder extends Seeder
 {
 	public function run()
 	{
-		$data = ['id' => 'a131', 'nom' => 'Villachane', 'prenom' => 'Louis', 'login' => 'lvillachane', 'mdp' => 'jux7g', 'adresse' => '8 rue des Charmes', 'cp' => '46000', 'ville' => 'Cahors', 'dateEmbauche' => '2005-12-21', ];
+		$data = ['id' => 'a131', 'nom' => 'Villachane', 'prenom' => 'Louis', 'login' => 'lvillachane', 'mdp' => 'jux7g', 'adresse' => '8 rue des Charmes', 'cp' => '46000', 'ville' => 'Cahors', 'dateEmbauche' => '2005-12-21', 'role' => 'visiteur',];
 		$this->db->table('visiteur')->insert($data);    
 
-		$data = ['id' => 'a17', 'nom' => 'Andre', 'prenom' => 'David', 'login' => 'dandre', 'mdp' => 'oppg5', 'adresse' => '1 rue Petit', 'cp' => '46200', 'ville' => 'Lalbenque', 'dateEmbauche' => '1998-11-23', ];
+		$data = ['id' => 'a17', 'nom' => 'Andre', 'prenom' => 'David', 'login' => 'dandre', 'mdp' => 'oppg5', 'adresse' => '1 rue Petit', 'cp' => '46200', 'ville' => 'Lalbenque', 'dateEmbauche' => '1998-11-23', 'role' => 'visiteur',];
 		$this->db->table('visiteur')->insert($data);    
 
 		$data = ['id' => 'a55', 'nom' => 'Bedos', 'prenom' => 'Christian', 'login' => 'cbedos', 'mdp' => 'gmhxd', 'adresse' => '1 rue Peranud', 'cp' => '46250', 'ville' => 'Montcuq', 'dateEmbauche' => '1995-01-12', ];

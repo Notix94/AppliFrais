@@ -6,27 +6,27 @@ use \DateTime;
 use \DateInterval;
 
 /**
- * Modèle représentant tous les traitements possibles attachés à un Visiteur désigné
+ * Modèle représentant tous les traitements possibles attachés à un Utilisateur désigné
  *
  */
-class ActionsVisiteur extends Model {
+class ActionsUtilisateur extends Model {
 
 	private $dao;
-	private $idVisiteur;
+	private $idUtilisateur;
 	 
-	function __construct($idVisiteur)
+	function __construct($idUtilisateur)
 	{
 		// Call the Model constructor
 		parent::__construct();
 
 		// chargement du modèle d'accès aux données qui est utile à toutes les méthodes
 		$this->dao = new DataAccess();
-		$this->idVisiteur = $idVisiteur;
+		$this->idUtilisateur = $idUtilisateur;
 	}
 
 	/**
 	 * Mécanisme de contrôle d'existence des fiches de frais sur les 6 derniers 
-	 * mois pour un visiteur donné. 
+	 * mois pour un Utilisateur donné. 
 	 * Si l'une d'elle est absente, elle est créée.
 	 * 
 	*/
@@ -42,9 +42,9 @@ class ActionsVisiteur extends Model {
 			// la date au format aaaamm
 			$unMois = $date->format('Ym');
 			// si la fiche pour le mois concerné n'existe pas, ...
-			if(!$this->dao->existeFiche($this->idVisiteur, $unMois)) {
+			if(!$this->dao->existeFiche($this->idUtilisateur, $unMois)) {
 				// ...on la crée
-				$this->dao->insertFiche($this->idVisiteur, $unMois);
+				$this->dao->insertFiche($this->idUtilisateur, $unMois);
 			}
 			// le mois précédent
 			$date->sub($interval);
@@ -52,13 +52,13 @@ class ActionsVisiteur extends Model {
 	}
 	
 	/**
-	 * Liste les fiches existantes d'un visiteur 
+	 * Liste les fiches existantes d'un Utilisateur 
 	 *
 	 * @param $message : message facultatif destiné à notifier l'utilisateur du résultat d'une action précédemment exécutée
 	*/
-	public function getLesFichesDuVisiteur($message=null)
+	public function getLesFichesDuUtilisateur($message=null)
 	{		
-		return $this->dao->getLesFiches($this->idVisiteur);
+		return $this->dao->getLesFiches($this->idUtilisateur);
 	}	
 
 	/**
@@ -70,8 +70,8 @@ class ActionsVisiteur extends Model {
 	{	
 		$res = array();
 		
-		$res['lesFraisHorsForfait'] = $this->dao->getLesLignesHorsForfait($this->idVisiteur, $mois);
-		$res['lesFraisForfait'] = $this->dao->getLesLignesForfait($this->idVisiteur, $mois);		
+		$res['lesFraisHorsForfait'] = $this->dao->getLesLignesHorsForfait($this->idUtilisateur, $mois);
+		$res['lesFraisForfait'] = $this->dao->getLesLignesForfait($this->idUtilisateur, $mois);		
 		
 		return $res;
 	}
@@ -85,9 +85,9 @@ class ActionsVisiteur extends Model {
 	public function signeLaFiche($mois)
 	{	// TODO : intégrer une fonctionnalité d'impression PDF de la fiche
 
-		$laFiche = $this->dao->getLaFiche($this->idVisiteur,$mois);
+		$laFiche = $this->dao->getLaFiche($this->idUtilisateur,$mois);
 		if($laFiche['idEtat']=='CR'){
-				$this->dao->updateEtatFiche($this->idVisiteur, $mois,'CL');
+				$this->dao->updateEtatFiche($this->idUtilisateur, $mois,'CL');
 		}
 	}
 
@@ -101,8 +101,8 @@ class ActionsVisiteur extends Model {
 	{	// TODO : s'assurer que les paramètres reçus sont cohérents avec ceux mémorisés en session
 		// TODO : valider les données contenues dans $lesFrais ...
 		
-		$this->dao->updateLignesForfait($this->idVisiteur,$mois,$lesQtes);
-		$this->dao->updateMontantFiche($this->idVisiteur,$mois);
+		$this->dao->updateLignesForfait($this->idUtilisateur,$mois,$lesQtes);
+		$this->dao->updateMontantFiche($this->idUtilisateur,$mois);
 	}
 
 	/**
@@ -119,8 +119,8 @@ class ActionsVisiteur extends Model {
 		$libelle = $uneLigne['libelle'];
 		$montant = $uneLigne['montant'];
 
-		$this->dao->insertLigneHorsForfait($this->idVisiteur,$mois,$libelle,$dateFrais,$montant);
-		$this->dao->updateMontantFiche($this->idVisiteur,$mois);
+		$this->dao->insertLigneHorsForfait($this->idUtilisateur,$mois,$libelle,$dateFrais,$montant);
+		$this->dao->updateMontantFiche($this->idUtilisateur,$mois);
 	}
 
 	/**
@@ -133,6 +133,6 @@ class ActionsVisiteur extends Model {
 	{	// TODO : s'assurer que les paramètres reçus sont cohérents avec ceux mémorisés en session et cohérents entre eux
 
 	  $this->dao->deleteLigneHorsForfait($idLigneFrais);
-		$this->dao->updateMontantFiche($this->idVisiteur,$mois);
+		$this->dao->updateMontantFiche($this->idUtilisateur,$mois);
 	}
 }

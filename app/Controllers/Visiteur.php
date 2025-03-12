@@ -14,7 +14,7 @@ use \App\Models\ActionsVisiteur;
 class Visiteur extends BaseController {
 
 	private $authentif;
-	private $idVisiteur;
+	private $idUtilisateur;
 	private $data;
 	private $actVisiteur;
    
@@ -37,9 +37,9 @@ class Visiteur extends BaseController {
 		// Initialisation des attributs de la classe
 		$this->authentif = new Authentif();
 		$this->session = session();
-		$this->idVisiteur = $this->session->get('idUser');
+		$this->idUtilisateur = $this->session->get('idUser');
 		$this->data['identite'] = $this->session->get('prenom').' '.$this->session->get('nom');
-		$this->actVisiteur = new ActionsVisiteur($this->idVisiteur);
+		$this->actVisiteur = new ActionsVisiteur($this->idUtilisateur);
 
 		// Vérification de la présence des 6 dernières fiches de frais pour le visiteur connecté
 		$this->actVisiteur->checkLastSix();

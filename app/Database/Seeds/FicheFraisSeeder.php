@@ -28,7 +28,7 @@ class FicheFraisSeeder extends Seeder
 		// Parcours des Visiteurs
 		foreach($lesVisiteurs as $unVisiteur)
 		{
-			$idVisiteur = $unVisiteur['id'];
+			$idUtilisateur = $unVisiteur['id'];
 
 			$moisCourant = $moisFin;
 			$n = 1;
@@ -63,7 +63,7 @@ class FicheFraisSeeder extends Seeder
 				
 				// Assemblage de la fiche à mémoriser
 				$data = [
-					'idvisiteur' 			=> $idVisiteur,
+					'idutilisateur' 			=> $idUtilisateur,
 					'mois'						=> $moisCourant->format('Ym'),
 					'nbJustificatifs' => $nbJustificatifs,
 					'montantValide'		=> 0,
