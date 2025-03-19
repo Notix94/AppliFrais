@@ -18,4 +18,9 @@ $routes->get('/visiteur/seDeconnecter', 'Visiteur::SeDeconnecter');
 $routes->post('/visiteur/updateForfait/(:num)', 'Visiteur::updateForfait/$1');
 $routes->post('/visiteur/ajouteUneLigneDeFrais/(:num)', 'Visiteur::ajouteUneLigneDeFrais/$1');
 $routes->get('/visiteur/deleteUneLigneDeFrais/(:num)/(:num)', 'Visiteur::deleteUneLigneDeFrais/$1/$2');
+
+$routes->get('/comptable', 'Comptable::index');
+$routes->get('/comptable/seDeconnecter', 'Comptable::SeDeconnecter');
+$routes->get('/comptable/lesFiches', 'Comptable::lesFiches');
+
 $routes->get('/anonyme/login', 'Anonyme::login');

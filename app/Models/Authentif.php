@@ -20,7 +20,11 @@ class Authentif extends Model
 	*/
 	public function estVisiteur()
 	{	// TODO : A faire évoluer dès lors qu'il y aura des comptables gérés dans l'application
-	  return !is_null($this->session->get('idUser'));
+	  return !is_null($this->session->get('idUser')) && $this->session->get('role') === 'visiteur';
+	}
+        public function estComptable()
+	{	
+	  return !is_null($this->session->get('idUser')) && $this->session->get('role') === 'comptable';
 	}
 	
 	/**
@@ -35,6 +39,7 @@ class Authentif extends Model
 		$this->session->set('nom', $authUser['nom']);
 		$this->session->set('prenom', $authUser['prenom']);
 		$this->session->set('login', $authUser['login']);
+                $this->session->set('role', $authUser['role']);
 	}
 
 	/**
@@ -42,7 +47,7 @@ class Authentif extends Model
 	 */
 	public function deconnecter()
 	{
-		$authUser = array('idUser', 'nom', 'prenom', 'login');
+		$authUser = array('idUser', 'nom', 'prenom', 'login', 'role');
 		$this->session->remove($authUser);
 		$this->session->destroy();
 
@@ -57,7 +62,7 @@ class Authentif extends Model
 	public function authentifier ($login, $mdp) 
 	{
 		$dao = new DataAccess();
-		$authUser = $dao->getVisiteur($login);
+		$authUser = $dao->getUtilisateur($login);
 		
 		if (empty($authUser) or ($authUser['mdp'] != $mdp)) {
 			$authUser = null;

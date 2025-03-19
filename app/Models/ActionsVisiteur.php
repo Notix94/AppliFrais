@@ -9,7 +9,7 @@ use \DateInterval;
  * Modèle représentant tous les traitements possibles attachés à un Utilisateur désigné
  *
  */
-class ActionsUtilisateur extends Model {
+class ActionsVisiteur extends Model {
 
 	private $dao;
 	private $idUtilisateur;
