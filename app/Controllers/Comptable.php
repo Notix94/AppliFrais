@@ -12,7 +12,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
 use \App\Models\Authentif;
-use \App\Models\ActionsComptable;
+use \App\Models\ActionsComptable; 
 /**
  * Description of Comptable
  *
