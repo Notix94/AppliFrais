@@ -70,6 +70,14 @@ class Comptable extends BaseController{
 
 		return view('v_comptableLesFiches', $this->data);	
 	}
+        
+        public function  suivieFiches($message = "")
+	{
+		$this->data['suivieFiches'] = $this->actComptable->getLesFichesDesVisiteur();
+		$this->data['notify'] = $message;
+
+		return view('v_comptableSuivieFiches', $this->data);	
+	}
 
 	/**
 	 * Déconnecte la session
@@ -84,13 +92,13 @@ class Comptable extends BaseController{
 	 *
 	 * @param : le mois de la fiche concernée
 	 */
-	public function voirLesFiche($mois)
+	/*public function voirLesFiche($mois)
 	{	// TODO : contrôler la validité du mois de la fiche à consulter
 	
-		$this->data['fiche'] = $this->actCopmtable->getLesFiche($mois);
+		$this->data['fiche'] = $this->actComptable->getLesFiche($mois);
 		$this->data['mois'] = $mois;
 		return view('v_comptableVoirFiche', $this->data);
-	}
+	}*/
 
 	
 

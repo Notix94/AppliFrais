@@ -56,7 +56,7 @@ class ActionsVisiteur extends Model {
 	 *
 	 * @param $message : message facultatif destiné à notifier l'utilisateur du résultat d'une action précédemment exécutée
 	*/
-	public function getLesFichesDuUtilisateur($message=null)
+	public function getLesFichesDuVisiteur($message=null)
 	{		
 		return $this->dao->getLesFiches($this->idUtilisateur);
 	}	

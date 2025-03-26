@@ -2,7 +2,7 @@
 
 <?= $this->section('body') ?>
 <div id="contenu">
-	<h2>Gestion des fiche des visiteur</h2>
+	<h2>validation des fiche des visiteur</h2>
 	<p>Bienvenue dans votre application de gestion des frais de déplacements des visiteur. </p>
 	<p>
 		découvrez les frais des déplacements professionnels des visiteurs.

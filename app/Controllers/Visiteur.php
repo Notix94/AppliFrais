@@ -39,7 +39,7 @@ class Visiteur extends BaseController {
 		$this->session = session();
 		$this->idVisiteur = $this->session->get('idUser');
 		$this->data['identite'] = $this->session->get('prenom').' '.$this->session->get('nom');
-		$this->actVisiteur = new ActionsVisiteur($this->idVisteur);
+		$this->actVisiteur = new ActionsVisiteur($this->idVisiteur);
 
 		// Vérification de la présence des 6 dernières fiches de frais pour le visiteur connecté
 		$this->actVisiteur->checkLastSix();

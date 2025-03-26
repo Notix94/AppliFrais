@@ -35,7 +35,10 @@
 						<?= anchor('comptable/', 'Accueil', 'title="Page d\'accueil"') ?>
 					</li>
 					<li class="smenu">
-						<?= anchor('comptable/lesFiches', 'les fiches de frais', 'title="Consultation des fiches de frais"') ?>
+						<?= anchor('comptable/lesFiches', 'valider les fiches de frais ', 'title="Consultation des fiches de frais"') ?>
+					</li>
+                                        <li class="smenu">
+						<?= anchor('comptable/suivieFiches', 'suivre les payement de fiches ', 'title="suivre les payement de fiches"') ?>
 					</li>
 					<br/>
 					<li class="smenu">
