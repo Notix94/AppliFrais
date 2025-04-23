@@ -92,14 +92,7 @@ class Comptable extends BaseController{
 	 *
 	 * @param : le mois de la fiche concernée
 	 */
-	/*public function voirLesFiche($mois)
-	{	// TODO : contrôler la validité du mois de la fiche à consulter
 	
-		$this->data['fiche'] = $this->actComptable->getLesFiche($mois);
-		$this->data['mois'] = $mois;
-		return view('v_comptableVoirFiche', $this->data);
-	}*/
-
 	
 
 	

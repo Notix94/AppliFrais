@@ -23,7 +23,7 @@ $routes->get('/visiteur/deleteUneLigneDeFrais/(:num)/(:num)', 'Visiteur::deleteU
 $routes->get('/comptable', 'Comptable::index');
 $routes->get('/comptable/seDeconnecter', 'Comptable::SeDeconnecter');
 $routes->get('/comptable/lesFiches', 'Comptable::lesFiches');
-
+$routes->get('/comptable/validerFiche/(:num)', 'Comptable::validerFiche/$1'); 
 $routes->get('/comptable/suivieFiches', 'Comptable::suivieFiches');
 
 // ajout de la route directe pour eviter erreur 404

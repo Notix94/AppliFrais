@@ -2,6 +2,18 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Controllers/Comptable.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Controllers/Visiteur.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Models/ActionsComptable.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Views/l_comptable.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Views/v_visiteurMesFiches.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Models/ActionsVisiteur.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Views/v_comptableAccueil.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Views/v_comptableSuivreFiches.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Views/v_visiteurVoirFiche.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Views/v_comptableValiderFiches.php</file>
+            <file>file:/P:/Documents/2nd/gsvV2/applifrais/app/Views/v_comptableLesFiches.php</file>
+        </group>
     </open-files>
 </project-private>
