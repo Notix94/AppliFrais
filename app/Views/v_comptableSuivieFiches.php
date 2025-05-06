@@ -22,16 +22,16 @@
             foreach ($suivieFiches as $uneFiche) {
                 $signeLink = '';
 
-                if ($suivieFiche['id'] == 'CR') {
+                if ($uneFiche['id'] == 'CL') {
                     $signeLink = anchor('comptable/signeMaFiche/' . $uneFiche['mois'], 'signer', 'title="Signer la fiche"  onclick="return confirm(\'Voulez-vous vraiment signer cette fiche ?\');"');
                 }
 
-                $date = new DateTime($suivieFiche['dateModif']);
+                $date = new DateTime($uneFiche['dateModif']);
                 echo
                 '<tr>
 					<td class="date">' . anchor('comptable/voirLesFiche/' . $uneFiche['mois'], $uneFiche['mois'], 'title="Consulter les fiche"') . '</td>
-					<td class="libelle">' . $suivieFiche['libelle'] . '</td>
-					<td class="montant">' . $suivieFiche['montantValide'] . '</td>
+					<td class="libelle">' . $uneFiche['libelle'] . '</td>
+					<td class="montant">' . $uneFiche['montantValide'] . '</td>
 					<td class="date">' . $date->format('d/m/Y') . '</td>
 					
 				</tr>';

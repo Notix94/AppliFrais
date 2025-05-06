@@ -17,7 +17,7 @@ class Visiteur extends BaseController {
 	private $idVisiteur;
 	private $data;
 	private $actVisiteur;
-   
+	private $session;
 	/**
 	 * Constructeur du contrôleur : constructeur fourni par CodeIgniter. S'exécute après le 
 	 * constructeur PHP __construct

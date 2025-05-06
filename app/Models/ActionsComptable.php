@@ -58,9 +58,13 @@ class ActionsComptable extends Model {
 	*/
 	public function getLesFichesDesVisiteur($message=null)
 	{		
-		return $this->dao->getLesFiches($this->idComptable);
+		return $this->dao->getLesFichesDuSuivie($this->idComptable);
 	}	
 
+	public function getLesFichesDesVisiteurCL($message=null)
+	{		
+		return $this->dao->getLesFichesCL($this->idComptable);
+	}
 	/**
 	 * Retourne le détail de la fiche sélectionnée 
 	 * 
@@ -82,12 +86,30 @@ class ActionsComptable extends Model {
 	 * 
 	 * @param $mois : le mois de la fiche à signer
 	*/
-	public function signeLaFiche($mois)
+	public function validerLaFiche($mois)
 	{	// TODO : intégrer une fonctionnalité d'impression PDF de la fiche
 
-		$lesFiche = $this->dao->getLesFiche($this->idUtilisateur,$mois);
-		if($lesFiche['idEtat']=='CR'){
-				$this->dao->updateEtatFiche($this->idUtilisateur, $mois,'CL');
+		$lesFiche = $this->dao->getLesFichesCL();
+		
+		foreach ($lesFiche as $fiche) {
+
+			if($fiche['mois'] == $mois && $fiche['id']=='CL'){
+				$this->dao->updateEtatFiche($fiche['idVisiteur'], $mois,'VA');
+		}	
 		}
+		
+	}
+	public function refuserLaFiche($mois)
+	{	// TODO : intégrer une fonctionnalité d'impression PDF de la fiche
+
+		$lesFiche = $this->dao->getLesFichesCL();
+		
+		foreach ($lesFiche as $fiche) {
+
+			if($fiche['mois'] == $mois && $fiche['id']=='CL'){
+				$this->dao->updateEtatFiche($fiche['idVisiteur'], $mois,'RF');
+		}	
+		}
+		
 	}
 }

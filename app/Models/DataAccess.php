@@ -199,7 +199,26 @@ class DataAccess extends Model {
 		$laLigne = $rs->getFirstRow('array');
 		return $laLigne;
 	}
-
+        public function getLesFichesCL () {
+		$req = "select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = 'CL'
+						order by mois desc";
+		$rs = $this->db->query($req);
+		$lesFichesCL = $rs->getResultArray();
+		
+		return $lesFichesCL;
+	}
+	public function getLesFichesDuSuivie () {
+		$req = "select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						WHERE fichefrais.idEtat IN ('VA', 'MP', 'RB')
+						order by mois desc";
+		$rs = $this->db->query($req);
+		$lesFichesCL = $rs->getResultArray();
+		
+		return $lesFichesCL;
+	}
 	/**
 	 * Modifie l'état et la date de modification d'une fiche de frais
 	 * 
@@ -220,15 +239,16 @@ class DataAccess extends Model {
 	 * @param $idVisiteur 
 	*/
 	
-	public function getLesFiches () {
+	public function getLesFiches ($idVisiteur) {
 		$req = "select idVisiteur, mois, montantValide, dateModif, id, libelle
 						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
-						where fichefrais.idEtat = 'CL'
+						where fichefrais.idvisiteur ='$idVisiteur'
 						order by mois desc";
 		$rs = $this->db->query($req);
 		$lesFiches = $rs->getResultArray();
 		return $lesFiches;
 	}
+        
 	/**
 	 * Calcule le montant total de la fiche pour un visiteur et un mois donnés
 	 * 

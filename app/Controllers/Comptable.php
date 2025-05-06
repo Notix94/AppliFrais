@@ -25,6 +25,7 @@ class Comptable extends BaseController{
 	private $idUtilisateur;
 	private $data;
 	private $actComptable;
+	private $session;
    
 	/**
 	 * Constructeur du contrôleur : constructeur fourni par CodeIgniter. S'exécute après le 
@@ -65,7 +66,7 @@ class Comptable extends BaseController{
 	 */ 
 	public function  lesFiches($message = "")
 	{
-		$this->data['lesFiches'] = $this->actComptable->getLesFichesDesVisiteur();
+		$this->data['lesFiches'] = $this->actComptable->getLesFichesDesVisiteurCL();
 		$this->data['notify'] = $message;
 
 		return view('v_comptableLesFiches', $this->data);	
@@ -93,9 +94,19 @@ class Comptable extends BaseController{
 	 * @param : le mois de la fiche concernée
 	 */
 	
-	
 
+        public function validerMaFiche($mois)
+	{	// TODO : contrôler la validité du mois de la fiche à modifier
+
+		$this->actComptable->ValiderLaFiche($mois);
+		// ... et on revient à mesFiches
+		return $this->lesFiches("La fiche $mois a été valider. <br/>je deteste ce tp.");
+	}
 	
-	
+	public function refuserFiche($mois){
+		$this->actComptable->refuserLaFiche($mois);
+		// ... et on revient à mesFiches
+		return $this->lesFiches("La fiche $mois a été refuser. <br/>je deteste ce tp.");
+	}
 }
 

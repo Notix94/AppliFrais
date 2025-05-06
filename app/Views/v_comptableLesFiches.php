@@ -12,6 +12,7 @@
                             <th>Id</th>
 				
 				<th >Etat</th>  
+                                <th >Mois</th>
 				<th >Montant</th>  
 				<th >Date modif.</th>  
 				<th  colspan="4">Actions</th>              
@@ -27,9 +28,9 @@
 
         // Lien pour signer la fiche
         if ($uneFiche['id'] == 'CL') {
-            $validerLink = anchor('comptable/signeMaFiche/'.$uneFiche['mois'], 'valider',  'title="Valider la fiche"  onclick="return confirm(\'Voulez-vous vraiment valider cette fiche ?\');"');
+            $validerLink = anchor('comptable/validerMaFiche/'.$uneFiche['mois'], 'valider',  'title="Valider la fiche"  onclick="return confirm(\'Voulez-vous vraiment valider cette fiche ?\');"');
          // Exemple d'un lien pour modifier la fiche
-        $rembourserLink = anchor('comptable/modifierFiche/'.$uneFiche['mois'], 'rembourser', 'title="Rembourser la fiche"');
+        $rembourserLink = anchor('comptable/refuserFiche/'.$uneFiche['mois'], 'refuser', 'title="Refuser la fiche"');
 
             }
 
@@ -37,8 +38,9 @@
         $date = new DateTime($uneFiche['dateModif']);
         echo 
         '<tr>
-            <td class="date">'.anchor('comptable/voirLesFiche/'.$uneFiche['idVisiteur'], $uneFiche['idVisiteur'],  'title="Consulter les fiches"').'</td>
+                <td class="date">'.$uneFiche['idVisiteur'].'</td>
             <td class="libelle">'.$uneFiche['libelle'].'</td>
+                <td class="date">'.$uneFiche['mois'].'</td>
             <td class="montant">'.$uneFiche['montantValide'].'</td>
             <td class="date">'.$date->format('d/m/Y').'</td>
             <td class="action">'.$rembourserLink.'</td>  <!-- Lien modifié -->
