@@ -209,10 +209,22 @@ class DataAccess extends Model {
 		
 		return $lesFichesCL;
 	}
+
+	public function getLesFichesE ($etat) {
+		$req = "select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = '$etat'
+						order by mois desc";
+		$rs = $this->db->query($req);
+		$lesFichesCL = $rs->getResultArray();
+		
+		return $lesFichesCL;
+	}
+	
 	public function getLesFichesDuSuivie () {
 		$req = "select idVisiteur, mois, montantValide, dateModif, id, libelle
 						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
-						WHERE fichefrais.idEtat IN ('VA', 'MP', 'RB')
+						WHERE fichefrais.idEtat IN ('VA', 'MP')
 						order by mois desc";
 		$rs = $this->db->query($req);
 		$lesFichesCL = $rs->getResultArray();
@@ -232,7 +244,14 @@ class DataAccess extends Model {
 						where fichefrais.idvisiteur ='$idVisiteur' and fichefrais.mois = '$mois'";
 		$this->db->simpleQuery($req);
 	}
-	
+	public function updateMotifFiche($idVisiteur,$mois,$motif){
+		 // Échapper les caractères spéciaux pour éviter les erreurs SQL
+		 $motif = $this->db->escapeString($motif);
+		$req = "update ficheFrais 
+						set motif = '$motif', dateModif = now() 
+						where fichefrais.idvisiteur ='$idVisiteur' and fichefrais.mois = '$mois'";
+		$this->db->simpleQuery($req);
+	}
 	/**
 	 * Obtient toutes les fiches (sans détail) d'un visiteur donné 
 	 * 

@@ -1,0 +1,549 @@
+INFO - 2025-05-07 08:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 09:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 10:05:46 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: comptable/suivieFiches]
+in APPPATH\Views\v_comptableSuivieFiches.php on line 37.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableSuivieFiches', [], true)
+ 4 APPPATH\Controllers\Comptable.php(80): view('v_comptableSuivieFiches', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->suivieFiches()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 10:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 10:06:05 --> Error: Call to undefined function <a href="http://applifrais.local/comptable/misePaiement/202505" title="Mettre en paiement"  onclick="return confirm('Voulez-vous vraiment mettre en paiement cette fiche ?');">en Paiement</a>()
+[Method: GET, Route: comptable/suivieFiches]
+in APPPATH\Views\v_comptableSuivieFiches.php on line 37.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableSuivieFiches', [], true)
+ 4 APPPATH\Controllers\Comptable.php(80): view('v_comptableSuivieFiches', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->suivieFiches()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 10:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 10:40:07 --> ArgumentCountError: Too few arguments to function App\Controllers\Comptable::miseEnPaiement(), 0 passed in C:\Users\User\Documents\Développement\PHP\applifrais\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: comptable/miseEnPaiement/202505]
+in APPPATH\Controllers\Comptable.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->miseEnPaiement()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 10:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 10:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 11:20:27 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: comptable/lesFiches]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ActionsComptable.php(66): CodeIgniter\Model->__call('getLesFichesCL', [...])
+ 4 APPPATH\Controllers\Comptable.php(69): App\Models\ActionsComptable->getLesFichesDesVisiteurCL()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->lesFiches()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 11:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 11:20:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: comptable/suivieFiches]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ActionsComptable.php(61): CodeIgniter\Model->__call('getLesFichesDuSuivie', [...])
+ 4 APPPATH\Controllers\Comptable.php(77): App\Models\ActionsComptable->getLesFichesDesVisiteur()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->suivieFiches()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 11:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 11:20:52 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: comptable/miseEnPaiement/202412]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ActionsComptable.php(66): CodeIgniter\Model->__call('getLesFichesCL', [...])
+ 4 APPPATH\Controllers\Comptable.php(69): App\Models\ActionsComptable->getLesFichesDesVisiteurCL()
+ 5 APPPATH\Controllers\Comptable.php(116): App\Controllers\Comptable->lesFiches('La fiche 202412 a été mit en Paiement.')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->miseEnPaiement('202412')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 11:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 11:20:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: comptable/suivieFiches]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ActionsComptable.php(61): CodeIgniter\Model->__call('getLesFichesDuSuivie', [...])
+ 4 APPPATH\Controllers\Comptable.php(77): App\Models\ActionsComptable->getLesFichesDesVisiteur()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->suivieFiches()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 11:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 11:20:56 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: comptable/suivieFiches]
+in SYSTEMPATH\Database\BaseConnection.php on line 927.
+ 1 SYSTEMPATH\Model.php(716): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(922): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ActionsComptable.php(61): CodeIgniter\Model->__call('getLesFichesDuSuivie', [...])
+ 4 APPPATH\Controllers\Comptable.php(77): App\Models\ActionsComptable->getLesFichesDesVisiteur()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->suivieFiches()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 11:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-07 11:23:38 --> mysqli_sql_exception: Unknown column 'CL' in 'where clause' in C:\Users\User\Documents\Développement\PHP\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\User\Documents\Développement\PHP\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('select idVisite...', 0)
+#1 C:\Users\User\Documents\Développement\PHP\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select idVisite...')
+#2 C:\Users\User\Documents\Développement\PHP\applifrais\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select idVisite...')
+#3 C:\Users\User\Documents\Développement\PHP\applifrais\app\Models\DataAccess.php(218): CodeIgniter\Database\BaseConnection->query('select idVisite...')
+#4 C:\Users\User\Documents\Développement\PHP\applifrais\app\Models\ActionsComptable.php(92): App\Models\DataAccess->getLesFichesE('CL')
+#5 C:\Users\User\Documents\Développement\PHP\applifrais\app\Controllers\Comptable.php(101): App\Models\ActionsComptable->validerLaFiche('202409')
+#6 C:\Users\User\Documents\Développement\PHP\applifrais\system\CodeIgniter.php(933): App\Controllers\Comptable->validerMaFiche('202409')
+#7 C:\Users\User\Documents\Développement\PHP\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+#8 C:\Users\User\Documents\Développement\PHP\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Documents\Développement\PHP\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Documents\Développement\PHP\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Documents\Développement\PHP\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-05-07 11:23:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'CL' in 'where clause'
+[Method: GET, Route: comptable/validerMaFiche/202409]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DataAccess.php(218): CodeIgniter\Database\BaseConnection->query('select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = CL
+						order by mois desc')
+ 2 APPPATH\Models\ActionsComptable.php(92): App\Models\DataAccess->getLesFichesE('CL')
+ 3 APPPATH\Controllers\Comptable.php(101): App\Models\ActionsComptable->validerLaFiche('202409')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->validerMaFiche('202409')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-07 11:23:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'CL' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = CL
+						order by mois desc')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = CL
+						order by mois desc')
+ 3 APPPATH\Models\DataAccess.php(218): CodeIgniter\Database\BaseConnection->query('select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = CL
+						order by mois desc')
+ 4 APPPATH\Models\ActionsComptable.php(92): App\Models\DataAccess->getLesFichesE('CL')
+ 5 APPPATH\Controllers\Comptable.php(101): App\Models\ActionsComptable->validerLaFiche('202409')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->validerMaFiche('202409')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-07 11:23:38 --> [Caused by] mysqli_sql_exception: Unknown column 'CL' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = CL
+						order by mois desc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = CL
+						order by mois desc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = CL
+						order by mois desc')
+ 4 APPPATH\Models\DataAccess.php(218): CodeIgniter\Database\BaseConnection->query('select idVisiteur, mois, montantValide, dateModif, id, libelle
+						from  fichefrais inner join Etat on ficheFrais.idEtat = Etat.id 
+						where fichefrais.idEtat = CL
+						order by mois desc')
+ 5 APPPATH\Models\ActionsComptable.php(92): App\Models\DataAccess->getLesFichesE('CL')
+ 6 APPPATH\Controllers\Comptable.php(101): App\Models\ActionsComptable->validerLaFiche('202409')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->validerMaFiche('202409')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 11:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 11:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 12:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 13:52:50 --> ErrorException: Undefined variable $uneFiche
+[Method: POST, Route: comptable/refuserFiche/202412]
+in APPPATH\Views\v_comptableLesFiches.php on line 55.
+ 1 APPPATH\Views\v_comptableLesFiches.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uneFiche', 'C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableLesFiches', [], true)
+ 5 APPPATH\Controllers\Comptable.php(72): view('v_comptableLesFiches', [...])
+ 6 APPPATH\Controllers\Comptable.php(113): App\Controllers\Comptable->lesFiches('La fiche 202412 a été refuser Motif:.')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->refuserFiche('202412')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 13:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 13:53:36 --> ErrorException: Undefined variable $uneFiche
+[Method: GET, Route: comptable/lesFiches]
+in APPPATH\Views\v_comptableLesFiches.php on line 55.
+ 1 APPPATH\Views\v_comptableLesFiches.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uneFiche', 'C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableLesFiches', [], true)
+ 5 APPPATH\Controllers\Comptable.php(72): view('v_comptableLesFiches', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->lesFiches()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 13:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 13:53:39 --> ErrorException: Undefined variable $uneFiche
+[Method: POST, Route: comptable/refuserFiche/202411]
+in APPPATH\Views\v_comptableLesFiches.php on line 55.
+ 1 APPPATH\Views\v_comptableLesFiches.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uneFiche', 'C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableLesFiches', [], true)
+ 5 APPPATH\Controllers\Comptable.php(72): view('v_comptableLesFiches', [...])
+ 6 APPPATH\Controllers\Comptable.php(113): App\Controllers\Comptable->lesFiches('La fiche 202411 a été refuser Motif:.')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->refuserFiche('202411')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 13:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 13:53:41 --> ErrorException: Undefined variable $uneFiche
+[Method: GET, Route: comptable/lesFiches]
+in APPPATH\Views\v_comptableLesFiches.php on line 55.
+ 1 APPPATH\Views\v_comptableLesFiches.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uneFiche', 'C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableLesFiches', [], true)
+ 5 APPPATH\Controllers\Comptable.php(72): view('v_comptableLesFiches', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->lesFiches()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 13:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 13:53:43 --> ErrorException: Undefined variable $uneFiche
+[Method: GET, Route: comptable/lesFiches]
+in APPPATH\Views\v_comptableLesFiches.php on line 55.
+ 1 APPPATH\Views\v_comptableLesFiches.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uneFiche', 'C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableLesFiches', [], true)
+ 5 APPPATH\Controllers\Comptable.php(72): view('v_comptableLesFiches', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->lesFiches()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 13:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 13:53:46 --> ErrorException: Undefined variable $uneFiche
+[Method: GET, Route: comptable/lesFiches]
+in APPPATH\Views\v_comptableLesFiches.php on line 55.
+ 1 APPPATH\Views\v_comptableLesFiches.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uneFiche', 'C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableLesFiches', [], true)
+ 5 APPPATH\Controllers\Comptable.php(72): view('v_comptableLesFiches', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->lesFiches()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 13:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 13:55:18 --> ErrorException: Undefined variable $uneFiche
+[Method: POST, Route: comptable/refuserFiche/202502]
+in APPPATH\Views\v_comptableLesFiches.php on line 55.
+ 1 APPPATH\Views\v_comptableLesFiches.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uneFiche', 'C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableLesFiches', [], true)
+ 5 APPPATH\Controllers\Comptable.php(72): view('v_comptableLesFiches', [...])
+ 6 APPPATH\Controllers\Comptable.php(113): App\Controllers\Comptable->lesFiches('La fiche 202502 a été refuser Motif:.')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->refuserFiche('202502')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 13:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 13:55:24 --> ErrorException: Undefined variable $uneFiche
+[Method: POST, Route: comptable/refuserFiche/202501]
+in APPPATH\Views\v_comptableLesFiches.php on line 55.
+ 1 APPPATH\Views\v_comptableLesFiches.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uneFiche', 'C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableLesFiches', [], true)
+ 5 APPPATH\Controllers\Comptable.php(72): view('v_comptableLesFiches', [...])
+ 6 APPPATH\Controllers\Comptable.php(113): App\Controllers\Comptable->lesFiches('La fiche 202501 a été refuser Motif:.')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->refuserFiche('202501')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 13:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-07 13:55:38 --> ErrorException: Undefined variable $uneFiche
+[Method: GET, Route: comptable/lesFiches]
+in APPPATH\Views\v_comptableLesFiches.php on line 55.
+ 1 APPPATH\Views\v_comptableLesFiches.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uneFiche', 'C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\User\\Documents\\Développement\\PHP\\applifrais\\app\\Views\\v_comptableLesFiches.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_comptableLesFiches', [], true)
+ 5 APPPATH\Controllers\Comptable.php(72): view('v_comptableLesFiches', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->lesFiches()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 13:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 13:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-07 14:16:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ai envie', dateModif = now() 
+						where fichefrais.idvisiteur ='a131' and ...' at line 2 in C:\Users\User\Documents\Développement\PHP\applifrais\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\User\Documents\Développement\PHP\applifrais\system\Database\MySQLi\Connection.php(312): mysqli->query('update ficheFra...', 0)
+#1 C:\Users\User\Documents\Développement\PHP\applifrais\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('update ficheFra...')
+#2 C:\Users\User\Documents\Développement\PHP\applifrais\app\Models\DataAccess.php(251): CodeIgniter\Database\BaseConnection->simpleQuery('update ficheFra...')
+#3 C:\Users\User\Documents\Développement\PHP\applifrais\app\Models\ActionsComptable.php(112): App\Models\DataAccess->updateMotifFiche('a131', '202411', 'refus car j'ai ...')
+#4 C:\Users\User\Documents\Développement\PHP\applifrais\app\Controllers\Comptable.php(114): App\Models\ActionsComptable->refuserLaFiche('202411', 'refus car j'ai ...')
+#5 C:\Users\User\Documents\Développement\PHP\applifrais\system\CodeIgniter.php(933): App\Controllers\Comptable->refuserFiche('202411')
+#6 C:\Users\User\Documents\Développement\PHP\applifrais\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+#7 C:\Users\User\Documents\Développement\PHP\applifrais\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Documents\Développement\PHP\applifrais\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Documents\Développement\PHP\applifrais\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Documents\Développement\PHP\applifrais\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-05-07 14:16:37 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ai envie', dateModif = now() 
+						where fichefrais.idvisiteur ='a131' and ...' at line 2
+[Method: POST, Route: comptable/refuserFiche/202411]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('update ficheFrais 
+						set motif = \'refus car j\'ai envie\', dateModif = now() 
+						where fichefrais.idvisiteur =\'a131\' and fichefrais.mois = \'202411\'')
+ 2 APPPATH\Models\DataAccess.php(251): CodeIgniter\Database\BaseConnection->simpleQuery('update ficheFrais 
+						set motif = \'refus car j\'ai envie\', dateModif = now() 
+						where fichefrais.idvisiteur =\'a131\' and fichefrais.mois = \'202411\'')
+ 3 APPPATH\Models\ActionsComptable.php(112): App\Models\DataAccess->updateMotifFiche('a131', '202411', 'refus car j\'ai envie')
+ 4 APPPATH\Controllers\Comptable.php(114): App\Models\ActionsComptable->refuserLaFiche('202411', 'refus car j\'ai envie')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->refuserFiche('202411')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-07 14:16:37 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ai envie', dateModif = now() 
+						where fichefrais.idvisiteur ='a131' and ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('update ficheFrais 
+						set motif = \'refus car j\'ai envie\', dateModif = now() 
+						where fichefrais.idvisiteur =\'a131\' and fichefrais.mois = \'202411\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('update ficheFrais 
+						set motif = \'refus car j\'ai envie\', dateModif = now() 
+						where fichefrais.idvisiteur =\'a131\' and fichefrais.mois = \'202411\'')
+ 3 APPPATH\Models\DataAccess.php(251): CodeIgniter\Database\BaseConnection->simpleQuery('update ficheFrais 
+						set motif = \'refus car j\'ai envie\', dateModif = now() 
+						where fichefrais.idvisiteur =\'a131\' and fichefrais.mois = \'202411\'')
+ 4 APPPATH\Models\ActionsComptable.php(112): App\Models\DataAccess->updateMotifFiche('a131', '202411', 'refus car j\'ai envie')
+ 5 APPPATH\Controllers\Comptable.php(114): App\Models\ActionsComptable->refuserLaFiche('202411', 'refus car j\'ai envie')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Comptable->refuserFiche('202411')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comptable))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-05-07 14:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-07 14:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

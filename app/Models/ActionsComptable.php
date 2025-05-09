@@ -89,7 +89,7 @@ class ActionsComptable extends Model {
 	public function validerLaFiche($mois)
 	{	// TODO : intégrer une fonctionnalité d'impression PDF de la fiche
 
-		$lesFiche = $this->dao->getLesFichesCL();
+		$lesFiche = $this->dao->getLesFichesE('CL');
 		
 		foreach ($lesFiche as $fiche) {
 
@@ -99,15 +99,45 @@ class ActionsComptable extends Model {
 		}
 		
 	}
-	public function refuserLaFiche($mois)
+	public function refuserLaFiche($mois,$motif)
 	{	// TODO : intégrer une fonctionnalité d'impression PDF de la fiche
 
-		$lesFiche = $this->dao->getLesFichesCL();
+		$lesFiche = $this->dao->getLesFichesE('CL');
 		
 		foreach ($lesFiche as $fiche) {
 
 			if($fiche['mois'] == $mois && $fiche['id']=='CL'){
 				$this->dao->updateEtatFiche($fiche['idVisiteur'], $mois,'RF');
+				 // Mise à jour du motif dans la fiche refusée
+				 $this->dao->updateMotifFiche($fiche['idVisiteur'], $mois, $motif);
+		}	
+		}
+		
+	}
+
+	public function mettreEnPaiement($mois)
+	{	// TODO : intégrer une fonctionnalité d'impression PDF de la fiche
+
+		$lesFiche = $this->dao->getLesFichesE('VA');
+		
+		foreach ($lesFiche as $fiche) {
+			
+			if($fiche['mois'] == $mois && $fiche['id']=='VA'){
+				$this->dao->updateEtatFiche($fiche['idVisiteur'], $mois,'MP');
+		}	
+		}
+		
+	}
+
+	public function isRembourser($mois)
+	{	// TODO : intégrer une fonctionnalité d'impression PDF de la fiche
+
+		$lesFiche = $this->dao->getLesFichesE('MP');
+		
+		foreach ($lesFiche as $fiche) {
+			
+			if($fiche['mois'] == $mois && $fiche['id']=='MP'){
+				$this->dao->updateEtatFiche($fiche['idVisiteur'], $mois,'RB');
 		}	
 		}
 		

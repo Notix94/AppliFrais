@@ -13,27 +13,32 @@
                 <th >Etat</th>  
                 <th >Total</th>  
                 <th >Date modif.</th>  
-                             
+                <th colspan="4">Actions</th>  
             </tr>
         </thead>
         <tbody>
 
             <?php
             foreach ($suivieFiches as $uneFiche) {
-                $signeLink = '';
-
-                if ($uneFiche['id'] == 'CL') {
-                    $signeLink = anchor('comptable/signeMaFiche/' . $uneFiche['mois'], 'signer', 'title="Signer la fiche"  onclick="return confirm(\'Voulez-vous vraiment signer cette fiche ?\');"');
+                $misePLink = '';
+                $rembourser ='';
+               
+                if ($uneFiche['id'] == 'VA') {
+                    $misePLink = anchor('comptable/miseEnPaiement/' . $uneFiche['mois'], 'en Paiement', 'title="Mettre en paiement"  onclick="return confirm(\'Voulez-vous vraiment mettre en paiement cette fiche ?\');"');
                 }
-
+                if ($uneFiche['id'] == 'MP') {
+                    $misePLink = anchor('comptable/estRembourser/' . $uneFiche['mois'], 'a Rembourser', 'title="Mettre en Remboursement"  onclick="return confirm(\'Voulez-vous vraiment rembourser cette fiche ?\');"');
+                }
                 $date = new DateTime($uneFiche['dateModif']);
+               
                 echo
                 '<tr>
-					<td class="date">' . anchor('comptable/voirLesFiche/' . $uneFiche['mois'], $uneFiche['mois'], 'title="Consulter les fiche"') . '</td>
+					<td class="date">' . anchor('comptable/voirLesFiche/' . $uneFiche['mois'], $uneFiche['idVisiteur'], 'title="Consulter les fiche"') . '</td>
 					<td class="libelle">' . $uneFiche['libelle'] . '</td>
 					<td class="montant">' . $uneFiche['montantValide'] . '</td>
 					<td class="date">' . $date->format('d/m/Y') . '</td>
-					
+					<td class="action">'.$misePLink.'</td>  <!-- Lien modifié -->
+                    <td class="action">'.$rembourser.'</td>  <!-- Lien modifié -->
 				</tr>';
             }
             ?>	  

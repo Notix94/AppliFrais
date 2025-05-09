@@ -100,13 +100,33 @@ class Comptable extends BaseController{
 
 		$this->actComptable->ValiderLaFiche($mois);
 		// ... et on revient à mesFiches
-		return $this->lesFiches("La fiche $mois a été valider. <br/>je deteste ce tp.");
+		return $this->lesFiches("La fiche $mois a été valider.");
 	}
 	
 	public function refuserFiche($mois){
-		$this->actComptable->refuserLaFiche($mois);
+		// Récupérer le motif envoyé par la requête POST
+		$motif = $this->request->getPost('motif');
+     // Vérifie si le motif est bien présent
+	 if (!$motif) {
+        return redirect()->back()->with('error', 'Motif requis pour le refus de la fiche.');
+    }
+
+		$this->actComptable->refuserLaFiche($mois,$motif);
 		// ... et on revient à mesFiches
-		return $this->lesFiches("La fiche $mois a été refuser. <br/>je deteste ce tp.");
+		return $this->lesFiches("La fiche $mois a été refuser Motif:$motif.");
+	}
+
+
+	public function miseEnPaiement($mois){
+		$this->actComptable->mettreEnPaiement($mois);
+		// ... et on revient à mesFiches
+		return $this->lesFiches("La fiche $mois a été mit en Paiement.");
+	}
+
+	public function estRembourser($mois){
+		$this->actComptable->isRembourser($mois);
+		// ... et on revient à mesFiches
+		return $this->lesFiches("La fiche $mois a été Rembourser.");
 	}
 }
 
